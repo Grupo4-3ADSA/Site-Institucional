@@ -1,0 +1,73 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+
+    background-color: #ffffff00;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: #0A3D62;
+}
+
+.navbar{
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    /* background-color: rebeccapurple; */
+    
+}
+
+.menu_principal{
+    margin: 2% 0 0 0;
+    float: right;
+    width: 60%;
+    /* background-color: blue; */
+}
+
+li{
+    list-style: none;
+    float: left;
+    margin: 0 7% 0 0;
+    color: #20577D;
+}
+
+.btn_contato{
+    padding: 1px 10px;
+    border-radius: 30px;
+    color: white;
+    background-color: #20577D;
+}
+
+a{
+    text-decoration: none;
+    color: #20577D;
+}
+
+.aqui{
+    color: red;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+}
+
+.img_home{
+    width: 100%;
+    
+}
+
+@media screen and (min-width: 1200px){
+    .img_home{
+        width: 100%;
+        
+    }
+}
+
+
