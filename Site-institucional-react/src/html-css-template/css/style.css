@@ -134,11 +134,11 @@ a {
     font-size: 20px;
 }
 
-#sobre b{
+#sobre b {
     color: #20577D;
 }
 
-#sobre img{
+#sobre img {
     width: 15%;
     margin-top: 2%;
     padding: 0 30px;
@@ -147,28 +147,61 @@ a {
 
 /* Fim sobre */
 
+/* Servicos */
+
+#servicos {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.titulo_servicos {
+    color: #20577D;
+}
+
+.nossos_servicos {
+    position: relative;
+    top: 20%;
+    left: 22%;
+    width: 30%;
+    height: 50%;
+    background: #F5F5F5;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.nossos_servicos img{
+    position: inherit;
+    top: 5%;
+}
+
+/* fim servicos */
+
 /*  */
 @media screen and (max-width: 800px) {
-    
-    #home{
+
+    #home {
         text-align: center;
         align-items: center;
     }
 
     .texto_inicial {
         width: 80%;
-        height: 20%;    
+        height: 20%;
     }
-            
-    .img_home{
+
+    .img_home {
         display: none;
     }
-        
+
     .menu_principal {
         width: 80%;
     }
 
-    #sobre img{
+    #sobre img {
         width: 20%;
         padding: 0 20px;
     }
@@ -176,13 +209,13 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-   
+
     /* home */
 
-    #home{
+    #home {
         height: 58vmax;
     }
-    
+
     .texto_inicial {
         width: 30%;
         top: 30%;
@@ -196,14 +229,14 @@ a {
     /* fim home */
 
     /* sobre */
- 
-    #sobre img{
+
+    #sobre img {
         width: 13%;
         padding: 0 10px;
 
     }
 
-    #sobre p{
+    #sobre p {
         font-size: 30px;
     }
 
