@@ -112,7 +112,7 @@ a {
 /* Sobre */
 
 #sobre {
-    height: 100vh;
+    height: 58vmax;
     width: 100%;
     text-align: center;
     align-items: center;
@@ -124,6 +124,15 @@ a {
     font-weight: 400;
     font-size: 48px;
     color: #20577D;
+}
+
+.linha_centro{
+    position: relative;
+    left: 43%;
+    width: 8%;
+    height: 0.5vh;
+    background: linear-gradient(90deg, #20577D 50%, rgba(51, 131, 183, 0.668657) 74.32%, rgba(172, 184, 191, 0) 123.4%);
+    border-radius: 30px;
 }
 
 #sobre p {
@@ -154,12 +163,15 @@ a {
     height: 100vh;
     /* background-color: red; */
     text-align: center;
-    font-weight: 400;
-    font-size: 36px;
+
 }
 
 .titulo_servicos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
     color: #20577D;
+
 }
 
 .nossos_servicos {
@@ -173,12 +185,83 @@ a {
     border-radius: 20px;
 }
 
-.nossos_servicos img{
-    position: inherit;
-    top: 5%;
+.nossos_servicos img {
+    width: 25%;
+    margin: 5%;
+}
+
+.servico {
+    font-weight: 400;
+    font-size: 160%;
+    color: #20577D;
+    margin: 2% 0 5% 0;
+}
+
+.nossos_servicos p {
+    font-weight: 400;
+    font-size: 160%;
+    margin: 0 3%;
 }
 
 /* fim servicos */
+
+/* simulacao */
+
+#simulacao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_simulacao {
+    width: 50%;
+    height: 50%;
+    margin-left: 5%;
+    /* background-color: red; */
+}
+
+.box_simulacao h1 {
+    color: #20577D;
+    font-weight: 400;
+    font-size: 250%;
+}
+
+.box_simulacao p {
+    font-weight: 400;
+    font-size: 150%;
+    margin: 5% 0 0 5%;
+}
+
+.box_simulacao h2 {
+    color: #2980B9;
+    font-weight: 400;
+    font-size: 200%;
+    margin-top: 5%;
+}
+
+.box_predio {
+    width: 40%;
+    height: 70%;
+    /* background-color: red; */
+    margin: 0 5% 0 0;
+}
+
+.box_predio img {
+    width: 90%;
+}
+
+
+.linha {
+    width: 25%;
+    height: 0.5vh;
+    background: linear-gradient(90deg, #20577D 50%, rgba(51, 131, 183, 0.668657) 74.32%, rgba(172, 184, 191, 0) 123.4%);
+    border-radius: 30px;
+}
+
+
+
+/* fim simulacao */
 
 /*  */
 @media screen and (max-width: 800px) {
