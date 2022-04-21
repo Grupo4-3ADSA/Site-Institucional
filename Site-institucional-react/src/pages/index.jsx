@@ -13,6 +13,7 @@ import fundo_servicos from '../html-css-template/images/fundo_servicos.png'
 import automacao from '../html-css-template/images/automacao.png'
 import fundo_simulacao from '../html-css-template/images/fundo_simulacao.png'
 import predio from '../html-css-template/images/predio.png'
+import Andar from "../componentes/andar";
 
 function Index() {
 
@@ -26,9 +27,9 @@ function Index() {
                     <ul className="menu_principal">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#sobre">Sobre</a></li>
-                        <li>Serviços</li>
-                        <li>Simulação</li>
-                        <li className="btn_contato">Contato</li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#simulacao">Simulação</a></li>
+                        <li className="btn_contato"><a className="btn_contato" href="#contato">Contato</a></li>
                     </ul>
                 </nav>
 
@@ -109,9 +110,16 @@ function Index() {
 
                     </div>
 
-                    <div className="box_predio">
+                    <div className="box_predio" style={{
+                        backgroundImage: `url(${predio})`, backgroundRepeat: 'no-repeat', backgroundSize: '100% 100%'
 
-                        <img src={predio} alt="" />
+                    }}>
+
+                        <div className="andares">
+
+                            <Andar />
+
+                        </div>
 
                     </div>
 

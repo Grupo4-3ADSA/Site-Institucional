@@ -128,9 +128,9 @@ a {
 
 .linha_centro{
     position: relative;
-    left: 43%;
-    width: 8%;
-    height: 0.5vh;
+    left: 40%;
+    width: 12%;
+    height: 1vh;
     background: linear-gradient(90deg, #20577D 50%, rgba(51, 131, 183, 0.668657) 74.32%, rgba(172, 184, 191, 0) 123.4%);
     border-radius: 30px;
 }
@@ -160,7 +160,7 @@ a {
 
 #servicos {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     /* background-color: red; */
     text-align: center;
 
@@ -176,10 +176,10 @@ a {
 
 .nossos_servicos {
     position: relative;
-    top: 20%;
+    top: 10%;
     left: 22%;
     width: 30%;
-    height: 50%;
+    height: 60%;
     background: #F5F5F5;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -230,7 +230,7 @@ a {
 .box_simulacao p {
     font-weight: 400;
     font-size: 150%;
-    margin: 5% 0 0 5%;
+    margin: 5% 0 0 0%;
 }
 
 .box_simulacao h2 {
@@ -244,17 +244,38 @@ a {
     width: 40%;
     height: 70%;
     /* background-color: red; */
+    display: flex;
     margin: 0 5% 0 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .box_predio img {
     width: 90%;
 }
 
+.andares{
+    margin: 0 0 5% 0%;
+    background-color: red;
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.componenteAndar{
+    width: 90%;
+    height: 12%;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    background-color: cyan;
+}
 
 .linha {
     width: 25%;
-    height: 0.5vh;
+    height: 1vh;
     background: linear-gradient(90deg, #20577D 50%, rgba(51, 131, 183, 0.668657) 74.32%, rgba(172, 184, 191, 0) 123.4%);
     border-radius: 30px;
 }
