@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import '../html-css-template/css/style.css';
 import fundo from '../html-css-template/images/fundo.png';
 import logo from '../html-css-template/images/autg.png';
@@ -10,12 +10,35 @@ import mateus from '../html-css-template/images/mateus.png';
 import vitoria from '../html-css-template/images/vitoria.png';
 import fundo_sobre from '../html-css-template/images/fundo_sobre.png';
 import fundo_servicos from '../html-css-template/images/fundo_servicos.png'
-import automacao from '../html-css-template/images/automacao.png'
 import fundo_simulacao from '../html-css-template/images/fundo_simulacao.png'
+import fundo_contato from '../html-css-template/images/fundo_contato.png'
+import automacao from '../html-css-template/images/automacao.png'
 import predio from '../html-css-template/images/predio.png'
 import Andar from "../componentes/andar";
+import adicionar from '../html-css-template/images/adicionar.png'
+import excluir from '../html-css-template/images/excluir.png'
+
+let quantidadeAndares = 1
 
 function Index() {
+
+    const [andar, setAndar] = useState(["Andar 1"])
+    const [query, setQuery] = useState("")
+    
+    function adicionaAndar() {
+        quantidadeAndares += 1
+        setQuery(`Andar ${quantidadeAndares}`)
+        setAndar(andar => [`Andar ${quantidadeAndares}`,...andar])
+        console.log(andar)
+    }
+
+    function removerAndar() {
+        if (andar.length > 1) {
+            setAndar(andar.filter(a => a !== andar[0]))
+            quantidadeAndares--
+        }
+    }
+
 
     return (
 
@@ -106,7 +129,7 @@ function Index() {
 
                         <p>Cliqui no mais para adicionar um andar e simular sua economia.</p>
 
-                        <h2>Economia de: R$2.000,00</h2>
+                        <h2>Economia de: R${quantidadeAndares * 2000}</h2>
 
                     </div>
 
@@ -117,7 +140,106 @@ function Index() {
 
                         <div className="andares">
 
-                            <Andar />
+                            <div  className="adicionar">
+                                <img onClick={adicionaAndar} src={adicionar} alt="" />
+                                <img onClick={removerAndar} src={excluir} alt="" />
+                            </div>
+                            
+                            {
+
+                                andar.map(andar => (
+                                    <Andar
+                                        name={andar}
+                                    />
+                                ))
+
+                            }
+
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section style={{
+                    backgroundImage: `url(${fundo_contato})`, backgroundRepeat: 'no-repeat', backgroundSize: '100% 95%',
+                    backgroundColor: 'linear-gradient(94deg, rgba(13, 40, 59, 0.363) 0%, rgb(203, 216, 224) 100%)'
+
+                }} id="contato">
+
+                    <div className="container_contato">
+
+                        <div className="texto_contato">
+
+                            <h1>Entre em contato conosco</h1>
+                            <div className="linha"></div>
+
+                            <p>
+                                •Retornaremos em breve! <br />
+                                •Um consultor entrará em contato, fique atento a sua caixa de e-mail
+                            </p>
+
+                            <div className="solicitacao">
+                                <h3>•Já fez sua solicitação? <span>Acompanhe seu pedido com o cnpj:</span></h3>
+                                <input class="input-field:first-child" type="text" />
+                            </div>
+
+
+                        </div>
+
+                        <div className="formulario_contato">
+
+
+
+                            <form action="">
+
+                                <div className="teste">
+                                    <h2>Formulario para contato:</h2>
+                                    <div className="linha"></div>
+                                </div>
+
+                                <div className="input_box">
+
+                                    <label className="label_input">Nome da Empresa:</label>
+                                    <input placeholder="Digite o nome da empresa" type="text" required />
+
+                                </div>
+
+                                <div className="input_box">
+
+                                    <label className="label_input">Email:</label>
+                                    <input placeholder="Exemplo@gmail.com.br" type="email" required />
+
+                                </div>
+
+                                <div className="input_box">
+
+                                    <label className="label_input">Telefone:</label>
+                                    <input placeholder="(11)99999-9999" type="text" required />
+
+                                </div>
+
+                                <div className="input_box">
+
+                                    <label className="label_input">Cnpj:</label>
+                                    <input placeholder="12.345.678/0001-00" type="text" required />
+
+                                </div>
+
+                                <div className="input_box">
+
+                                    <label>Quer deixar alguma mensagem?</label>
+                                    <textarea name="mensagem" id="mensagem" className="input_mensagem"
+                                        placeholder="Mensagem" required></textarea>
+
+                                </div>
+
+                                <input type="submit" className="button_form" />
+
+                            </form>
+
+
 
                         </div>
 

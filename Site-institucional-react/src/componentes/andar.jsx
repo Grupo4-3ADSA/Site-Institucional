@@ -3,7 +3,7 @@ import React from "react";
 function Andar(props){
     return(
         <>
-            <div className="componenteAndar">Andar {props.numero}</div>
+            <div className="componenteAndar">{props.name}</div>
         </>
     )
 }

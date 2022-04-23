@@ -126,7 +126,7 @@ a {
     color: #20577D;
 }
 
-.linha_centro{
+.linha_centro {
     position: relative;
     left: 40%;
     width: 12%;
@@ -254,24 +254,55 @@ a {
     width: 90%;
 }
 
-.andares{
+.andares {
     margin: 0 0 5% 0%;
-    background-color: red;
+    background-color: white;
     width: 40%;
     height: 70%;
-    display: flex;
+    display: block;
+    /* display: flex; */
     justify-content: center;
-    /* align-items: center; */
+    overflow-y: hidden;
+    
 }
 
-.componenteAndar{
+.remover{
+    width: 10%;
+    /* background-color: red; */
+    /* position: relative; */
+    cursor: pointer;
+    width: 20px;
+    /* float: right; */
+}
+
+.componenteAndar {
     width: 90%;
     height: 12%;
     text-align: center;
     border-radius: 5px;
     display: flex;
-    background-color: cyan;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+
 }
+
+.adicionar{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adicionar img{
+    width: 10%;
+}
+
 
 .linha {
     width: 25%;
@@ -280,7 +311,144 @@ a {
     border-radius: 30px;
 }
 
+#contato {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(255, 0, 0, 0.318); */
+}
 
+.container_contato {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgba(0, 128, 0, 0.47); */
+}
+
+
+.texto_contato {
+    width: 45%;
+    height: 90%;
+    /* background-color: rgba(0, 0, 255, 0.193); */
+}
+
+.texto_contato h1 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #20577D;
+    margin: 5% 0 0 0%;
+}
+
+.texto_contato p {
+    margin-top: 5%;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.solicitacao {
+    /* background-color: red; */
+    font-weight: 400;
+    font-size: 19px;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.solicitacao input {
+    margin-top: 5%;
+    width: 60%;
+    height: 5vh;
+    background: rgba(255, 255, 255, 0.29);
+    border: 3px solid #97A4AC;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0) url(../images/lupa.png) no-repeat 2% center;
+
+}
+
+.solicitacao span {
+    color: #20577D;
+}
+
+.formulario_contato {
+    width: 45%;
+    height: 90%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_contato form {
+    width: 80%;
+    height: 90%;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.teste {
+    margin: 5% 0 5% 5%;
+}
+
+
+.formulario_contato h2 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #20577D;
+
+}
+
+.input_box {
+    margin: 3% 0 0 10%;
+    width: 90%;
+    height: 10%;
+}
+
+.input_box input {
+    display: block;
+    width: 90%;
+    height: 50%;
+    border-radius: 30px;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.75);
+    border: 3px solid #BBC4C9;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.button_form {
+    width: 70%;
+    height: 7%;
+    color: white;
+    margin: 10% 0 0 15%;
+    background: linear-gradient(90.15deg, #20577D 49.87%, rgba(190, 212, 226, 0.94) 115.05%);
+    border-radius: 50px;
+    border: none;
+}
+
+.input_mensagem {
+    display: block;
+    width: 90%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.75);
+    border: 3px solid #BBC4C9;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+
+.input_box label {
+    margin: 0 0 0 3%;
+}
 
 /* fim simulacao */
 
@@ -345,5 +513,11 @@ a {
     }
 
     /* fim sobre */
+
+    .formulario_contato form {
+        width: 80%;
+        height: 100%;
+        
+    }
 
 }
